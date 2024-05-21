@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen-IA Chat</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="imagemPreencher"></div>
+        <div class="interface">
+            <nav>
+                <a href="../index.html">
+                    <img class="sair" src="img/seta-esquerda.png" alt="Go back">
+                </a>
+                <h1>Zen-IA</h1>
+            </nav>
+            <div class="chat">
+                <div class="mensagens" id="mensagens">
+                    
+                    <div class="mensagem">
+                        <img src="img/elliot.jpg" alt="">
+                        <div class="texto">
+                            <p>Como fazer uma fornalha no minecraft? </p>
+                        </div>
+                    </div>
+                    <div class="mensagem usuario">
+                        <div class="texto">
+                            <p>Para fazer uma fornalha no Minecraft, siga os passos abaixo:
+                                
+                                <br> <br> 
+
+                                Coletar Pedra: 
+                                Primeiro, você precisa de pedra (cobblestone), Minere pelo menos 8 blocos de pedra usando uma picareta (pode ser de madeira, pedra, ferro, etc.).
+                                
+                                Abrir a Mesa de Trabalho: Em seguida, abra a sua mesa de trabalho (crafting table).
+                                
+                                Colocar a Pedra na Mesa de Trabalho</p>
+                        </div>
+                        <img src="img/IA.jpg" alt="">
+                    </div>
+                    <div class="mensagem">
+                        <img src="img/elliot.jpg" alt="">
+                        <div class="texto">
+                            <p>Obrigado!!!</p>
+                        </div>
+                    </div>
+                    <div class="mensagem usuario">
+                        <div class="texto">
+                            <p>De nada!!</p>
+                        </div>
+                        <img src="img/IA.jpg" alt="">
+                    </div>
+                </div>
+                <textarea id="requisicao" placeholder="Digite aqui..." oninput="ajustarTamanho()"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

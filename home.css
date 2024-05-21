@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1B1D1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.imagemPreencher {
+    display: block;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 40%;
+}
+
+.interface {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C2F33;
+}
+
+nav {
+    width: 100%;
+    background-color: #1B1D1E;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img {
+    height: 30px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav img.logo {
+    height: 40px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+
+.mensagens {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.mensagem {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.mensagem.usuario {
+    justify-content: flex-end;
+}
+
+.mensagem .texto {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4A4A4A;
+    color: #fff;
+}
+
+.mensagem.usuario .texto {
+    background-color: #4A996A;
+    color: white;
+}
+
+.mensagem img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.mensagem.usuario img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+    background-color: #2C2F33;
+    color: #fff;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: #3B3E42;
+}
+
+textarea::placeholder {
+    color: #aaa;
+}

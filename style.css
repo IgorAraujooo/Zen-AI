@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1B1D1E;
+    display: flex;
+}
+
+.imagemPreencher {
+    display: block;
+    background-image: url('img/background.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+    width: 40%;
+}
+
+.interface {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 12rem;
+}
+
+.login {
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6rem;
+}
+
+.login input {
+    width: 20vw;
+    height: 6vh;
+    background-color: transparent;
+    border: 2px solid #4A996A;
+    color: white; 
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 16px;  
+}
+
+.login input::placeholder {
+    color: #aaa;  
+}
+
+.login h1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left; 
+    align-self: flex-start; 
+    margin-bottom: 5px; 
+}
+
+.botao-login {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #4A996A; 
+    background-color: transparent;
+    border: 2px solid #4A996A; 
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.botao-login:hover {
+    border: 2px solid #000000; 
+    color: #000000;
+    background-color: #4A996A;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 1rem;
+    display: none;
+}
+
